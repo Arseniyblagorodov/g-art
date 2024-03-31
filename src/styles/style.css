@@ -6,7 +6,11 @@ body {
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 55px;
+}
 
+.hero__buttons {
+    margin-bottom: 30px;
 }
 
 .button {
@@ -52,3 +56,12 @@ body {
 
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img__cards {
+    max-height: 605px;
+    max-width: 584px;
+}
