@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-.h2_font {
+.txt-f14 {
     font-family: Jeko-Regular;
     font-size: 14px;
     font-weight: 400;
@@ -14,7 +14,7 @@
     letter-spacing: 0.1em;
 }
 
-.txt-24 {
+.txt-f24 {
     font-family: Jeko-Regular;
     font-size: 24px;
     font-weight: 800;
@@ -30,7 +30,6 @@ body {
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 55px;
 }
 
 .hero__buttons {
@@ -52,7 +51,6 @@ body {
     object-position: center;
 }
 
-
 .main__header {
     display: flex;
     justify-content: space-between;
@@ -61,31 +59,9 @@ body {
     border-bottom: 1px solid #0000001F;
 }
 
-.main__header-list {
+.header__list {
     display: flex;
     gap: 70px;
-}
-
-@media only screen and (max-width: 1240px) {
-    .container {
-        margin: 0 54px;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .container {
-        margin: 0 34px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .main__header-nav {
-        display: none;
-    }
-    .container {
-        margin: 0 14px;
-    }
-
 }
 
 .cards {
@@ -94,12 +70,29 @@ body {
     justify-content: space-between;
 }
 
-.img__cards {
-    max-height: 605px;
-}
-
-.card_item {
+.card__item {
     width: calc(33.33% - 20px);
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 1240px) {
+    .container {
+        padding: 0 54px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 0 34px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header__nav {
+        display: none;
+    }
+    .container {
+        padding: 0 14px;
+    }
 }
