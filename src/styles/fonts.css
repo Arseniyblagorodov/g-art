@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Jeko-Regular;
+  
+    src: local("Jeko-Regular"),
+    url("../fonts/FontsFree-Net-Jeko-Regular.ttf") format("truetype")
+  }
+
+  @font-face {
+    font-family: Jeko-Light;
+  
+    src: local("Jeko-Light"),
+    url("../fonts/FontsFree-Net-Jeko-Light.ttf") format("truetype")
+  }
