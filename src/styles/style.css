@@ -36,11 +36,7 @@
 
 body {
     background-color: #E6EAEF;
-    background-image: url(/src/img/background-img.png);
-    background-repeat: no-repeat;
 }
-
-
 
 .container {
     max-width: 1240px;
@@ -149,4 +145,28 @@ body {
     .container {
         padding: 0 14px;
     }
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 53px;
+}
+
+.footer__list {
+    display: flex;
+    gap: 70px;
+}
+
+.footer__list-item {
+    border: 1px solid black;
+    border-radius: 36px;
+    padding: 0 20px;
+    height: 30px;
+}
+
+.button-footer {
+    display: flex;
+    flex-wrap: wrap;
 }
