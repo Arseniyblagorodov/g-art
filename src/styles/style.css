@@ -136,6 +136,7 @@ body {
 .left__footer {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .footer_feedback {
@@ -184,6 +185,29 @@ footer {
     display: flex;
     flex-wrap: wrap;
     max-width: 400px;
+    gap: 11px 8px;
+}
+
+.motin_design {
+    margin-top: 42px;
+}
+
+.img_button {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 82px;
+}
+
+.form__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 160px;
+}
+
+.input__footer {
+    background-color: black;
 }
 
 @media only screen and (max-width: 1240px) {
