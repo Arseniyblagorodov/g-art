@@ -44,6 +44,10 @@ body {
     margin: 0 auto;
 }
 
+.footer__top-container {
+    display: flex;
+}
+
 .hero__buttons {
     display: flex;
     gap: 24px;
@@ -128,15 +132,30 @@ body {
 
 /*подвал*/
 
+footer
+
 .footer__top {
     display: flex;
     margin-top: 45px;
+    border-top: 1px solid black;
+    padding-top: 25px;
+    position: relative;
+}
+
+.footer__top::after {
+    content: "";
+    border-right: 1px solid black;
+    position: absolute;
+    height: 135%;
+    left: 50%;
+    top: 0;
 }
 
 .left__footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .footer_feedback {
@@ -156,6 +175,12 @@ footer {
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 53px;
+    border-top: 1px solid black;
+}
+
+.footer__bottom-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__list {
@@ -190,24 +215,47 @@ footer {
 
 .motin_design {
     margin-top: 42px;
+    line-height: 150px;
+    font-family: Jeko-Extra-Bolt;
+    font-size: 127px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 1500px;
 }
 
 .img_button {
-    display: flex;
-    justify-content: flex-end;
     padding-top: 82px;
+    align-self: self-end;
+}
+
+.img_button-left {
+    padding-right: 36px;
 }
 
 .form__footer {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    align-content: center;  
     margin-left: 160px;
 }
 
-.input__footer {
-    background-color: black;
+.form__footer-label-top {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.form__footer-label.form__footer-label-bottom {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.form__footer-label {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    width: 50%;
 }
 
 @media only screen and (max-width: 1240px) {

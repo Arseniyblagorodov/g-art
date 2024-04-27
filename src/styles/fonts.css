@@ -11,3 +11,9 @@
     src: local("Jeko-Light"),
     url("../fonts/FontsFree-Net-Jeko-Light.ttf") format("truetype")
   }
+
+  @font-face {
+    font-family: Jeko-Extra-Bolt;
+    src: local("Jeko-Extra-Bolt"),
+    url("../fonts/FontsFree-Net-Jeko-Extra-Bold.ttf") format("truetype")
+  }
