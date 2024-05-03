@@ -138,7 +138,6 @@ footer
     display: flex;
     margin-top: 45px;
     border-top: 1px solid black;
-    padding-top: 25px;
     position: relative;
 }
 
@@ -152,9 +151,7 @@ footer
 }
 
 .left__footer {
-    display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
     overflow: hidden;
 }
 
@@ -200,6 +197,7 @@ footer {
 .footer_part {
     display: flex;
     width: 50%;
+    padding: 30px 0;
 }
 
 .footer__social-icon {
@@ -233,11 +231,17 @@ footer {
     padding-right: 36px;
 }
 
+.img_button-right {
+    position: absolute;
+}
+
 .form__footer {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;  
-    margin-left: 160px;
+    align-content: center;
+    justify-content: flex-end;
+    padding-left: 25%;
+    position: relative;
 }
 
 .form__footer-label-top {
