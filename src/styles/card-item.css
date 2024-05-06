@@ -25,10 +25,13 @@
 }
 
 .profile_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
     font-size: 12px;
-    padding: 6px, 24px, 6px, 14px;
+    padding: 0 24px 0 14px;
     width: 235px;
-    height: 32px;
     height: 32px;
     background-color: black;
     color: #fff;

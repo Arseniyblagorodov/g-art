@@ -52,7 +52,7 @@ body {
     display: flex;
     gap: 24px;
     margin-bottom: 30px;
-    
+
 }
 
 .button {
@@ -131,8 +131,6 @@ body {
 }
 
 /*подвал*/
-
-footer
 
 .footer__top {
     display: flex;
@@ -262,28 +260,43 @@ footer {
     width: 50%;
 }
 
-@media only screen and (max-width: 1240px) {
+.logo__footer {
+    max-width: 100px;
+}
 
-   
+@media only screen and (max-width: 1240px) {
     .container {
         padding: 0 54px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-     .txt-title {
+    .txt-title {
         font-size: 80px;
     }
-     .container {
+
+    .container {
         padding: 0 34px;
     }
-    
+
+    /* классы для карточек */
+    .card__item {
+        width: calc(50% - 20px);
+    }
+
     /* классы для подвала */
     .footer__top-container {
         flex-direction: column;
     }
+
     .footer_part {
         width: 100%;
+        justify-content: center;
+        padding: 70px 0 30px;
+    }
+
+    .img_button-right {
+        position: initial;
     }
 
     .footer__top::after {
@@ -293,19 +306,38 @@ footer {
 
     .form__footer {
         padding-left: initial;
+        width: 100%;
     }
-    
-}  
+
+    .img_button-left {
+        padding-right: initial;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .txt-title {
         font-size: 60px;
     }
-    
+
     .header__nav {
         display: none;
     }
+
     .container {
         padding: 0 14px;
+    }
+
+    /* классы для карточек */
+    .card__item {
+        width: 100%;
+    }
+
+    .footer__list {
+        gap: 10px;
+    }
+
+    .footer__bottom-container {
+        flex-direction: column;
+        gap: 20px;
     }
 }
