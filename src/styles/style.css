@@ -1,6 +1,6 @@
 .txt-title {
     font-family: Jeko-Regular;
-    font-size: 100px;
+    font-size: 110px;
     letter-spacing: 5px;
     font-weight: 100;
     font-style: normal;
@@ -101,6 +101,13 @@ body {
     justify-content: space-between;
     margin-top: 50px;
     row-gap: 80px;
+}
+
+.cards__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    gap: 24px;
 }
 
 .card__item {
@@ -315,6 +322,8 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    
+    
     .txt-title {
         font-size: 60px;
     }
@@ -339,5 +348,23 @@ footer {
     .footer__bottom-container {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .form__footer-label-top {
+        flex-direction: column;
+    }
+
+    .form__footer-label {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .txt-title {
+        font-size: 20px;
+    }
+
+    .footer_feedback .txt-f14 {
+        font-size: 10px;
     }
 }
