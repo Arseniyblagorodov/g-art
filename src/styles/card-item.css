@@ -71,10 +71,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 12px;
-}
-
-.solid {
-    border: solid 1px black;
+    border-bottom: solid 1px black;
     width: 20px;
 }
 
