@@ -8,14 +8,13 @@ console.log("showAllButton", showAllButton);
 tabsItems.forEach(tabItem => {
     tabItem.addEventListener('click', () => {
         console.log("click")
-
-        let filter = this.textContent
-        cardsItems.forEach(cardItem => {
-            if (cardItem.textContent.includes(filter)) {
-                cardItem.style.display = 'block'
-            } else {
-                cardItem.style.display = 'none'
-            }
+        tabsItems.forEach(item => {
+            // console.log(tabItem.textContent)
+            const filter = tabItem.textContent
+            const filteredTabs = Array.from(cardsItems).filter(item => {
+                item.textContent.includes(filter)
+            })
+            console.log("filteredTabs", filteredTabs);
         })
     })
 })
