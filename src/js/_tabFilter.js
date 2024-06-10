@@ -9,18 +9,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabsItems.forEach(tabItem => {
         tabItem.addEventListener('click', () => {
+            tabsItems.forEach(item => {
+                item.style.backgroundColor = tabItem === item ? '#000' : '';
+                item.style.color = tabItem === item ? '#fff' : '';
+            })
             console.log("click")
 
             const filter = tabItem.textContent
             console.log('filter', filter)
-            const filteredTabsEasy = Array.from(cardsItems).filter(block => block.textContent.includes(filter)); // короткая запись. Когда есть только одно выражение в теле функции, можно опустить фигурные скобки и слово return
-            const filteredTabsFull = Array.from(cardsItems).filter((block) => {
+            const filteredTabs = Array.from(cardsItems).filter((block) => {
                 return block.textContent.includes(filter)
-            });// это полная запись
-            console.log("filteredTabsEasy", filteredTabsEasy);
-            console.log('filteredTabsFull', filteredTabsFull)
+            });
+            console.log('filteredTabs', filteredTabs)
+            cardsItems.forEach(cardItem => {
+                // if (filteredTabs.includes(cardItem)) {
+                //     cardItem.style.display = 'block'
+                // } else {
+                //     cardItem.style.display = 'none'
+                // }
+                cardItem.style.display = filteredTabs.includes(cardItem) ? `flex` : 'none';
+            })
+        })
+    })
+    showAllButton.addEventListener('click', () => {
+        cardsItems.forEach(item => {
+            item.style.display = 'flex'
         })
     })
 })
-
-
